@@ -1,0 +1,42 @@
+.bigBox{
+    display: grid;
+    background-color: lightgreen;
+    width: 100%;
+    height: 100vh;
+    grid-template-rows: 1fr 2fr 2fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 3fr 1fr;
+    grid-gap: 5px;
+}
+
+.boxTop{
+    background-color: lightblue;
+    grid-area: 1/2/span 1/ span 2;
+    text-align: center;
+}
+
+.boxList{
+    background-color: white;
+    grid-area: 2/2/span 3/ span 1;
+}
+
+.content1{
+    background-color: orange;
+    grid-area: 2/3/span 1/ span 1;
+}
+
+.content2{
+    background-color: green;
+    grid-area: 3/3/span 2/ span 1;
+}
+
+.bottom{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: blue;
+    grid-area: 5/2/span 1/ span 2;
+}
+
+img{
+    width: 80%;
+    height: 100%;
+}
